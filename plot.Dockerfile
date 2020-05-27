@@ -8,6 +8,4 @@ ADD https://raw.githubusercontent.com/kaihendry/iperf3chart/master/bw-test.sh /u
 
 RUN chmod +x /usr/local/bin/*.sh
 
-# ENTRYPOINT ["iperf3"]
-#
-# CMD ["--server", "--json", "--verbose"]
+ENTRYPOINT ["/bin/bash", "-c"]
